@@ -22,9 +22,9 @@
 ***
 
 ## Примеры использования
-- `node index add 'Позвонить маме'`
-- `node index list`
-- `node index get 1`
-- `node index update 3 "Выучить Node.JS"`
-- `node index status 4 "Выполнена"`
-- `node index delete 1`
+- `node cli add 'Позвонить маме'`
+- `node cli list`
+- `node cli get 1`
+- `node cli update 3 "Выучить Node.JS"`
+- `node cli status 4 "Выполнена"`
+- `node cli delete 1`
