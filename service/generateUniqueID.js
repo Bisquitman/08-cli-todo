@@ -14,6 +14,7 @@ export const generateUniqueID = async (filePath) => {
 
     return +maxId + 1;
   } catch (error) {
+    return 1;
     throw new Error("Ошибка чтения файла");
   }
 };

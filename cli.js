@@ -30,8 +30,23 @@ switch (command) {
     const taskId = process.argv[3];
     deleteTask(taskId);
     break;
+  case "-h" || "--help":
+    console.log(`
+      -h --help                 |   список команд
+      add <task>                |   добавить новую задачу.
+      list                      |   вывести список всех задач.
+      get <id>                  |   вывести информацию о задаче с указанным ID.
+      update <id> <"newTask">   |   обновить задачу с указанным ID.
+      status <id> <"newStatus"> |   обновить статус задачи с указанным ID.
+      delete <id>               |   удалить задачу с указанным ID.
+    `);
+    break;
   default:
-    console.log("Неверная команда");
+    console.log(`
+    Неверная команда.
+    Для получения списка команд
+    используйте ключ "-h" или "--help"
+    `);
 }
 
 // Пример использования
